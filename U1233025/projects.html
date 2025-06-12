@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>專案作品</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-item img {
+      max-height: 450px;
+      object-fit: contain;
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.6); /* 黑色半透明背景 */
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.7); /* 黑底箭頭 */
+      border-radius: 50%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-4">
+  <h1 class="mb-4">專案作品</h1>
+
+  <!-- 專案說明卡片 -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">冷氣補助預約系統</h5>
+      <p class="card-text">
+        使用 PHP 與 MySQL 開發，具備冷房能力自動計算、補助範圍估算、商品推薦與預約排程功能，適用於安裝服務流程最佳化。
+      </p>
+      <a href="https://kenny0822.github.io/" class="btn btn-primary" target="_blank">查看作品</a>
+    </div>
+  </div>
+
+  <!-- 專案輪播圖 -->
+  <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- 每張圖片加上 .carousel-caption 顯示標題 -->
+      <div class="carousel-item active">
+        <img src="登入註冊.png" class="d-block w-100" alt="登入註冊畫面">
+        <div class="carousel-caption">登入註冊畫面</div>
+      </div>
+      <div class="carousel-item">
+        <img src="首頁.png" class="d-block w-100" alt="首頁畫面">
+        <div class="carousel-caption">首頁畫面</div>
+      </div>
+      <div class="carousel-item">
+        <img src="管理商品.png" class="d-block w-100" alt="管理商品">
+        <div class="carousel-caption">管理商品</div>
+      </div>
+      <div class="carousel-item">
+        <img src="管理者商品狀態.png" class="d-block w-100" alt="管理者商品狀態">
+        <div class="carousel-caption">管理者商品狀態</div>
+      </div>
+      <div class="carousel-item">
+        <img src="商品選擇.png" class="d-block w-100" alt="商品選擇">
+        <div class="carousel-caption">商品選擇</div>
+      </div>
+      <div class="carousel-item">
+        <img src="補助加購.png" class="d-block w-100" alt="補助加購">
+        <div class="carousel-caption">補助加購</div>
+      </div>
+      <div class="carousel-item">
+        <img src="最終金額.png" class="d-block w-100" alt="最終金額">
+        <div class="carousel-caption">最終金額</div>
+      </div>
+      <div class="carousel-item">
+        <img src="預約時間.png" class="d-block w-100" alt="預約時間">
+        <div class="carousel-caption">預約時間</div>
+      </div>
+      <div class="carousel-item">
+        <img src="使用者訂單狀態.png" class="d-block w-100" alt="使用者訂單狀態">
+        <div class="carousel-caption">使用者訂單狀態</div>
+      </div>
+    </div>
+
+    <!-- 左右控制按鈕（強化可見性） -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">上一張</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">下一張</span>
+    </button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
